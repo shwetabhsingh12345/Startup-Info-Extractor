@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Startup Info Extractor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Startup Info Extractor</h1>
+    <form action="/submit" method="POST">
+        <label for="url">Startup Website URL:</label>
+        <input type="text" id="url" name="url" required>
+        <label for="startup_name">Startup Name:</label>
+        <input type="text" id="startup_name" name="startup_name" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
